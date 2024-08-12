@@ -1,0 +1,90 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Анимация</title>
+   <style>
+img{
+    height: 200px;
+    width: 300px;}
+div{
+    perspective: 500px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+}
+@keyframes move-horizontal {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+.copy1 {
+  animation: move-horizontal 5s infinite linear;
+}
+
+@keyframes change-shape {
+  0% { transform: translateX(0); border-radius: 0; }
+  50% { transform: translateX(1250px); border-radius: 50%; }
+  100% { transform: translateX(0); border-radius: 0; }
+}
+.copy2 {
+  animation: change-shape 5s infinite linear;
+}
+
+@keyframes move-left-right {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(1800px);  }
+}
+.copy3 {
+  animation: move-left-right 5s infinite linear;
+}
+
+@keyframes move-vertical {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(50px); }
+}
+.copy4 {
+  animation: move-vertical 5s infinite linear;
+}
+
+@keyframes move-square {
+  0% { left: 0; top: 0; }
+  25% { left: 200px; top: 0; }
+  50% { left: 200px; top: 200px; }
+  75% { left: 0; top: 200px; }
+  100% { left: 0; top: 0; }
+}
+.copy5 {
+  position: absolute;
+  animation: move-square 5s infinite linear;
+}
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+        opacity: 0.8;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  h1 {
+    animation: fade 2s infinite alternate;
+    text-align: center;
+  }
+   </style>
+ </head>
+ <body>
+  <h1>Анимация</h1>
+    <p></p><div><img src="задание2\пейзаж.jpg" class="copy1"></div></p>
+    <p><div><img src="задание2\пейзаж.jpg" class="copy2"></div></p>
+    <p><div><img src="задание2\пейзаж.jpg" class="copy3"></div></p>
+    <p><div><img src="задание2\пейзаж.jpg" class="copy4"></div></p>
+    <p><div><img src="задание2\пейзаж.jpg" class="copy5"></div></p>
+</body>
+</html>

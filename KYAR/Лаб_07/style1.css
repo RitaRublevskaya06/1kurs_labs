@@ -1,0 +1,36 @@
+div img{
+    float: left;
+    width: 350px;
+    height: 250px;
+    margin: 15px 15px 15px 15px; 
+    }
+   .image1:hover { 
+    transform: scale(0.5);
+   }
+   .image2:hover {
+    transform: rotate(45deg);
+   }
+   .image3:hover {
+    transform:  translate(50px);
+   }
+   .image4:hover {
+    transform: skew(-20deg);
+   }
+   @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+        opacity: 0.8;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  h1 {
+    animation: fade 2s infinite alternate;
+    text-align: center;
+  }

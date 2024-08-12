@@ -1,0 +1,39 @@
+
+.container {
+    margin: 1em auto;
+    width: 100%;
+}
+ .row {
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+
+.column {
+    float: left;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    margin-right: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 30px 20px;
+    margin: 0;
+    display: flex;
+    background-color: rgb(255, 232, 127);
+}
+nav ul li {
+    margin-right: 20px;
+}
+a {
+    text-align: center;
+    outline: none;
+    text-decoration: none;
+    font-size: 14px;
+  }
+  .three.columns{
+    text-align: justify;
+  }

@@ -1,0 +1,58 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Градиентные фоны</title>
+   <style>
+div {
+    float: left; 
+}
+.gradient1 {
+    background: linear-gradient(to top, #ff0000, #0026ff);
+    height: 150px;
+    width: 150px;
+    border: 2px solid #000000;
+    margin: 20px;
+   }
+.gradient2 {
+    background-image: repeating-linear-gradient(45deg, red 0px, red 10px, blue 10px, blue 20px);
+    height: 150px;
+    width: 150px;
+    border: 2px solid #000000;
+    margin: 20px;
+}
+.gradient3 {
+    background: radial-gradient(yellow, green);
+    height: 150px;
+    width: 150px;
+    border: 2px solid #000000;
+    margin: 20px;
+   }
+.gradient4 {
+    background: repeating-radial-gradient(green, green 10px, yellow 10px, yellow 20px);
+    height: 150px;
+    width: 150px;
+    border: 2px solid #000000;
+    margin: 20px;
+   }
+.gradient5 {
+    background: radial-gradient(yellow, green, transparent), 
+    linear-gradient(to top, rgb(232, 23, 255), transparent), linear-gradient( rgb(0, 4, 255), transparent);
+    height: 150px;
+    width: 150px;
+    border: 2px solid #000000;
+    margin: 20px;
+   }
+   
+   </style>
+</head>
+<body>
+<div><p class="gradient1"></p></div>
+<div><p class="gradient2"></p></div>
+<div><p class="gradient3"></p></div>
+<div><p class="gradient4"></p></div>
+<div><p class="gradient5"></p></div>
+</body>
+</html>

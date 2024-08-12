@@ -1,0 +1,76 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Анимация</title>
+   <style>
+
+#slideshow{
+    border: 5px solid blue;
+    width: 500px;
+    height: 400px;
+    position: absolute;
+    animation: imageAnime 5s linear infinite;
+    animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-size: cover;
+}
+
+@keyframes imageAnime {
+   0%{ 
+      background-image: url("задание5/p1.jpg");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 500px 400px; }
+   20%{ 
+      background-image: url("задание5/p2.jpg");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 500px 400px;  }
+   40%{ 
+      background-image: url("задание5/p3.jpg");
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 500px 400px;  }
+   60%{ 
+      background-image: url("задание5/p4.jpg"); 
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 500px 400px; }
+   80%{ 
+      background-image: url("задание/p5.jpg"); 
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 500px 400px; }
+   100%{ 
+      background-image: url("задание5/p1.jpg"); 
+      position: absolute;
+      background-repeat: no-repeat;
+      background-size: 500px 400px; }
+}
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+        opacity: 0.8;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  h1 {
+    animation: fade 2s infinite alternate;
+    text-align: center;
+  }
+   </style>
+</head>
+<body>
+   <h1>Анимация</h1>
+    <div id="slideshow"></div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body { 
+  display: grid;
+  grid-template-areas: 
+    "header header header"
+    "nav article aside"
+    "footer footer footer";
+  grid-template-columns: 10% 1fr 20%;
+  grid-template-rows: 70px 1fr 60px;
+  grid-gap: 10px;
+  height: 100vh;
+  margin: 0;
+    }
+header, footer, article, nav, div {
+  padding: 20px;
+  background: rgb(150, 149, 145);
+  }
+header {
+  padding: 2px;
+  background: rgb(150, 149, 145);
+  }
+#pageHeader {
+  grid-area: header;
+  }
+#pageFooter {
+  grid-area: footer;
+  }
+#mainArticle { 
+  grid-area: article;      
+  }
+#mainNav { 
+  grid-area: nav; 
+  }
+#siteAside { 
+  grid-area: aside; 
+  }
+a {
+  text-decoration: none;
+}
+a:link {
+  color:rgb(27, 132, 218);
+}
+a:visited {
+  color:rgb(176, 114, 226);
+}
+p {
+  text-align: justify;
+}

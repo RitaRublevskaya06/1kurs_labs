@@ -1,0 +1,97 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Анимация</title>
+   <style>
+img{
+    height: 200px;
+    width: 300px;
+}
+div{
+    perspective: 500px;
+    margin-top: 50px;
+    display: inline-block;
+    position: relative;
+}
+.gora{
+    z-index: 1;
+    animation: anime1 7s linear infinite;
+}
+.zakat{
+    z-index: 2;
+    right: 250px;
+    animation: anime2 7s linear infinite;
+}
+.ozero{
+    z-index: 3;
+    right: 500px;
+    animation: anime3 7s linear infinite;
+}
+.tuman{
+    z-index: 4;
+    right: 750px;
+    animation: anime4 7s linear infinite;
+}
+@keyframes anime1{
+    0%{transform: rotateY(45deg);}
+    15%{transform: rotateY(45deg);}
+    25%{transform: rotateY(0); perspective: 10000px;}
+    50%{}
+    75%{}
+    100%{}
+}
+@keyframes anime2{
+    0%{transform: rotateY(45deg);}
+    15%{transform: rotateY(45deg);}
+    25%{transform: rotateY(0); perspective: 10000px;}
+    50%{left:-250px;}
+    75%{left: 0px;}
+    100%{left: 0px; filter: blur(10px);}
+}
+@keyframes anime3{
+    0%{transform: rotateY(45deg);}
+    15%{transform: rotateY(45deg);}
+    25%{transform: rotateY(0); perspective: 10000px;}
+    50%{left:-500px;}
+    75%{left: 0px;}
+    100%{left: 0px; filter:grayscale(1);}
+}
+@keyframes anime4{
+    0%{transform: rotateY(45deg);}
+    15%{transform: rotateY(45deg);}
+    25%{transform: rotateY(0); perspective: 10000px;}
+    50%{left:-750px;}
+    75%{left:0px;}
+    100%{left: 0px; filter: invert(1);}
+}
+@keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+        opacity: 0.8;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  h1 {
+    animation: fade 2s infinite alternate;
+    text-align: center;
+  }
+   </style>
+</head>
+<body>
+    <h1>Анимация</h1>
+    <div class="gora"><img src="задание1\горы.jpg"></div>
+    <div class="zakat"><img src="задание1\закат.jpg"></div>
+    <div class="ozero"><img src="задание1\озеро.jpg"></div>
+    <div class="tuman"><img src="задание1\туман.jpg"></div>
+</body>
+</html>

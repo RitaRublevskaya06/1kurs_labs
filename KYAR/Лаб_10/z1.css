@@ -1,0 +1,265 @@
+.container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between  ;
+    align-items: stretch;
+    align-content: space-between;
+    max-width: 1500px;
+    min-width: 55px;
+    height: auto;
+    text-align: center;
+}
+div > div
+{
+    background-color: rgb(180, 175, 240);
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 5px;
+}
+ 
+.div1
+{
+    padding-top: 5px;
+    width: 100%;
+    height: max-content;
+    font-style: oblique;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    margin-bottom: 5px;
+    text-align: center;
+
+}
+.div2
+{
+    width: auto ;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 0 30%;
+    margin-top: 2px;
+}
+
+.div3
+{
+    max-height: 13500px;
+    width: auto ;
+    height: max-content;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 0 33%;
+    margin-top: 2px;
+}
+
+.div4
+{
+    width: auto ;
+    height: max-content;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 0 30%;
+    margin-top: 2px;
+}
+
+ 
+.p1 {
+   text-align: justify;
+}
+
+
+.container2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between  ;
+    align-items: stretch;
+    align-content: space-between;
+    max-width: 1500px;
+    min-width: 55px;
+    height: auto;
+}
+.head1{
+    width: 1500px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.body1{
+    width: auto ;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 0 23%;
+    margin-top: 2px;
+}
+
+
+  
+.hamburger-menu {
+    display: none;
+  }
+  
+  .menu__box {
+    display: none;
+    left: calc(100% - 400px); /* отступ меню справа */
+  }
+  
+  input {
+    display: none;
+  }
+  
+  @media screen and (max-width: 500px) {
+    .hamburger-menu {
+      display: flex;
+    }
+  
+    .menu__box {
+      display: block;
+    }
+  
+    input {
+      display: block;
+    }
+  
+    #menu__toggle {
+      opacity: 0;
+    }
+  
+    .menu__btn {
+      display: flex;
+      align-items: center;
+      position: relative;
+      top: 20px;
+      left: calc(100% - 100px);
+      width: 26px;
+      height: 26px;
+      cursor: pointer;
+      z-index: 1;
+    }
+  
+    .menu__btn > span,
+    .menu__btn > span::before,
+    .menu__btn > span::after {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      background-color: #000000;
+    }
+  
+    .menu__btn > span::before {
+      content: '';
+      top: -8px;
+    }
+  
+    .menu__btn > span::after {
+      content: '';
+      top: 8px;
+    }
+  
+    .menu__box {
+      display: block;
+      position: relative;
+      visibility: hidden;
+      top: 0;
+      right: -100%; /* Скрыть меню за пределами экрана */
+      width: 300px;
+      height: 100%;
+      margin: 0;
+      padding: 20px 0;
+      margin-top: 5px;
+      list-style: none;
+      text-align: center;
+      background-color: #ffffff;
+      box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    }
+  
+    .menu__item {
+      display: block;
+      padding: 12px 24px;
+      color: #333;
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+  
+    .menu__item:hover {
+      background-color: #CFD8DC;
+    }
+  
+    #menu__toggle:checked ~ .menu__btn > span {
+      transform: rotate(45deg);
+    }
+  
+    #menu__toggle:checked ~ .menu__btn > span::before {
+      top: 0;
+      transform: rotate(0);
+    }
+  
+    #menu__toggle:checked ~ .menu__btn > span::after {
+      top: 0;
+      transform: rotate(90deg);
+    }
+  
+    #menu__toggle:checked ~ .menu__box {
+      visibility: visible;
+      right: 0; /* Отобразить меню справа */
+    }
+  }
+  
+  
+  
+
+.container3{
+    margin-top: 25px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: space-between;
+    max-width: 1500px;
+    min-width: 50px;
+    height: auto;
+}
+.task{
+    box-sizing: border-box;
+    height: 300px;
+    width: 450px;
+    order: 1;
+    align-self: flex-start;
+    flex: 0 2 ;
+    margin-top: 10px;
+}
+img{
+    width: 300px;
+    height: 210px;
+}
+figcaption{
+    display: inline-block;
+    width: 300px;
+    text-align: center;
+    color: #2a2929;
+    background-color: #ffffff;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+@media screen and (max-width: 480px) {
+    figcaption{
+        color: red;
+    }
+}
+/*Исправила фотогалерею в уменьшенном виде*/
+@media screen and (max-width: 1280px) {
+   
+    figure{
+        max-width: 100%;    
+        max-height: 100%;
+    }
+    img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    figcaption{
+        max-width: 100%;    
+        max-height: 100%;
+        
+    }
+    
+}

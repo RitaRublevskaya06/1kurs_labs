@@ -1,0 +1,62 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Анимация</title>
+   <style>
+   @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    
+    50% {
+        opacity: 0.8;
+    }
+    
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  h1 {
+    animation: fade 2s infinite alternate;
+    text-align: center;
+  }
+img{
+   margin-left: 20px;
+   width: 300px;
+   height: 200px;
+   margin-top: 50px;
+}
+div{
+   margin: 50px 10px 10px 10px;
+   display: inline-block;
+}
+.img0{
+   perspective: 400px;
+}
+.img1{
+   transform: rotateX(30deg);
+}
+.img2{
+   transform: rotateY(30deg);
+}
+.img3{
+   transform: rotateX(-30deg);
+}
+.img4{
+   transform: rotateY(-40deg);
+}
+
+   </style>
+</head>
+<body>
+<h1>Анимация</h1>
+<div class="img0"><img src="задание2\космос.jpg" class="img1"></div> 
+<div class="img0"><img src="задание2\космос.jpg" class="img2"></div> 
+<div class="img0"><img src="задание2\космос.jpg" class="img3"></div> 
+<div class="img0"><img src="задание2\космос.jpg" class="img4"></div> 
+</body>
+</html>

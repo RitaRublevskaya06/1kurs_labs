@@ -1,0 +1,151 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>СИСТЕМА МОДУЛЬНОЙ ВЕРСТКИ</title>
+   <link href="z1.css" rel="stylesheet" media="all">
+   <link href="green.css" rel="stylesheet" media="(min-width: 768px)">
+   <style>
+    @import url("blue.css") screen and (min-width: 480px) and (max-width: 768px);
+   </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+            Flex-верстка
+        </div>
+        <div class="div2">
+            <section>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/eVZEwEQg4pg?si=t_fjTvxD6qH0sVgJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <section>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/8Gu40PFzOHI?si=woY0C2B9tykdgTzq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+            <section>
+                <iframe width="300" height="150" src="https://www.youtube.com/embed/oEOhLPEbDPw?si=pCKDFcImnbc2owKc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </section>
+        </div>
+        <div class="div3">
+            <p class="p1">
+                <b> Flexbox предназначен для создания гибких макетов.</b>С помощью этой технологии можно очень просто и гибко расставить элементы в контейнере, распределить доступное пространство между ними, и выровнять их тем или иным способом даже если они не имеют конкретных размеров. CSS Flexbox позволяет создать адаптивный дизайн намного проще, чем с использованием Float и позиционирования.Flexbox можно использовать как для CSS разметки целой страницы, так и её отдельных блоков.</br>
+                <b>Поддержка CSS Flexbox браузерами.</b>CSS Flexbox поддерживается всеми используемые на сегодняшний момент современными браузерами (с использованием префиксов: IE10+, Edge12+, Firefox 2+, Chrome 4+, Safari 3.1+, Opera 12.1+, iOS Safari 3.2, Opera mini, Android 2.1+, Blackberry 7+).</br>
+                <b>Основы CSS Flexbox.</b> Создание CSS разметки с помощью Flexbox начинается с установки необходимому HTML элементу CSS-свойства display со значением flex или flex-inline. После этого данный элемент становится flex-контейнером, а все его непосредственные дочерние элементы – flex-элементами. При этом когда мы говорим о flexbox то подразумеваем под этим только элемент с display:flex или display:flex-inline и все элементы непосредственно расположенные в нём. Таким образом в CSS Flexbox имеется всего два типа элементов: flex-контейнер и flex-элемент.</br>
+            </p>
+        </div>
+        <div class="div4">
+            <figure>
+                <figcaption>Bengu - Hodri Meydan
+                <audio src="d:\Музыка\Bengu - Hodri Meydan.mp3" controls></audio>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>Aynur Aydin - Bi Dakika
+                <audio src="d:\Музыка\Aynur Aydin - Bi Dakika.mp3" controls></audio>
+                </figcaption>
+            </figure>
+            <figure>
+                <figcaption>Aynur Aydin - Damla
+                <audio src="d:\Музыка\Aynur Aydin - Damla.mp3" controls></audio>
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+
+    <main class="main">
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+              <li><a class="menu__item" href="#1">Улучшение качества сна</a></li>
+              <li><a class="menu__item" href="#2">Повышение уровня энергии</a></li>
+              <li><a class="menu__item" href="#3">Укрепление иммунной системы</a></li>
+              <li><a class="menu__item" href="#4">Улучшение функций легких</a></li>
+            </ul>
+        </div>
+        <div class="container2">
+            <div class="head1">
+                <h1>Как свежий воздух влияет на человека</h1>    
+            </div>
+            <div class="body1">
+                    <h2><a name="1"></a>Улучшение качества сна</h2>
+                    <p>Свежий воздух содержит больше кислорода, что помогает улучшить качество сна. Кроме того, он может помочь снизить уровень стресса и улучшить настроение, что также способствует более качественному сну.</p>
+            </div>
+            <div class="body1">
+                <h2><a name="2">Повышение уровня энергии</a></h2>
+                <p>Свежий воздух содержит больше кислорода, что помогает улучшить кровообращение и увеличить уровень энергии. Это может быть особенно полезно для людей, которые часто чувствуют усталость и сонливость.</p>
+            </div>
+            <div class="body1">
+                <h2><a name="3">Укрепление иммунной системы</a></h2>
+                <p>Свежий воздух содержит меньше бактерий и вирусов, что помогает укрепить иммунную систему. Это особенно важно в периоды, когда распространение инфекций становится особенно высоким.</p>
+            </div>
+            <div class="body1">
+                <h2><a name="4">Улучшение функций легких</a></h2>
+                <p>Свежий воздух содержит меньше загрязнений и токсинов, что помогает улучшить функции легких. Это может быть особенно полезно для людей, страдающих от астмы и других заболеваний дыхательной системы.</p>
+            </div>
+         </div>
+    </main>
+
+    <div class="container3">
+        <div class="task">
+            <figure>
+                <figcaption >Пизанская башня
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Пизанская башня.jpg" alt="Пизанская башня">
+                </figcaption>
+            </figure>
+        </div>
+        <div class="task">
+            <figure>
+                <figcaption>Эйфелева башня
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Эйфелева башня.jpg" alt="Эйфелева башня">
+                </figcaption>
+            </figure>
+        </div>
+        <div class="task">
+            <figure>
+                <figcaption>Колизей
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Колизей.jpg" alt="Колизей">
+                </figcaption>
+            </figure>
+        </div>
+        <div class="task">
+            <figure>
+                <figcaption>Тадж-Махал
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Тадж-Махал.jpg" alt="Тадж-Махал">
+                </figcaption>
+            </figure>
+        </div>
+        <div class="task">
+            <figure>
+                <figcaption>Собор Святого Петра
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Собор Святого Петра.jpg" alt="Собор Святого Петра">
+                </figcaption>
+            </figure>
+        </div>
+        <div class="task">
+            <figure>
+                <figcaption>Собор Воскресения Христова на Крови
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Собор Воскресения Христова на Крови.jpg" alt="Собор Воскресения Христова на Крови">
+            </figcaption>
+        </figure>
+        </div>
+        <div class="task">
+            <figure>
+                <figcaption>Стены старого города
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Стены старого города.jpg" alt="Стены старого города">
+                </figcaption>
+            </figure>
+        </div>
+        <div class="task">
+            <figure>
+                <figcaption>Мемориал Линкольна
+                    <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб10\задание3\Мемориал Линкольна и Отражающий бассейн.jpg" alt="Мемориал Линкольна и Отражающий бассейн">
+                </figcaption>
+            </figure>
+        </div>
+    </div>
+</body>
+</html>
