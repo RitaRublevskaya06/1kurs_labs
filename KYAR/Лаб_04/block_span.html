@@ -1,0 +1,145 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Блочная модель</title>
+   <style type="text/css">
+.block1 { 
+    display: inline;
+    height: 90px;
+    width: 80px;
+    background: white;
+    padding: 10px 10px 10px 10px; 
+    padding-top: 10px;
+    border:  outset 15px rgb(255, 0, 0); 
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 10px 80px 10px;
+}
+.block2 { 
+    display: inline;
+    height: 90px;
+    width: 80px;
+    background: white;
+    padding: 10px 10px 10px 10px; 
+    padding-top: 10px;
+    border:  dashed 15px rgb(0, 255, 0); 
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 10px 80px 10px;
+}
+.block3 { 
+    display: inline;
+    height: 90px;
+    width: 80px;
+    background: white;
+    padding: 10px 10px 10px 10px; 
+    padding-top: 10px;
+    border:  dotted 15px rgb(0, 0, 255); 
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 10px 80px 10px;
+}
+.block4 { 
+    display: inline;
+    height: 90px;
+    width: 80px;
+    background: white;
+    padding: 10px 10px 10px 10px; 
+    padding-top: 10px;
+    border:  double  15px rgb(0, 255, 255); 
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 10px 80px 10px;
+}
+.block5 { 
+    display: inline;
+    height: 90px;
+    width: 80px;
+    background: white;
+    padding: 10px 10px 10px 10px; 
+    padding-top: 10px;
+    border:  groove  15px rgb(255, 107, 206); 
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 10px 80px 10px;
+}
+.block6 { 
+    display: inline;
+    height: 90px;
+    width: 80px;
+    background: white;
+    padding: 10px 10px 10px 10px; 
+    padding-top: 10px;
+    border:  inset  15px rgb(255, 255, 85); 
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 10px 80px 10px;
+}
+.block7 { 
+    display: inline;
+    height: 90px;
+    width: 80px;
+    background: white;
+    padding: 10px 10px 10px 10px; 
+    padding-top: 10px;
+    border:  solid  15px rgb(0, 0, 0); 
+    text-align: center;
+    font-size: 35px;
+    margin: 5px 600px 80px 10px;
+}
+.block8 { 
+    width: 400px;
+    display: block;
+    padding: 5px 5px 5px 5px;
+    border: solid 2px #FF7F50;
+    text-align: center;
+    margin: 50px 30px 15px 10px;
+}
+.block9 { 
+    float: right;
+    border: solid 5px red;
+    padding: 5px 5px 5px 5px;
+    border-radius: 20px/40px;
+    box-shadow: inset 2px 2px 8px 8px rgba(0,0,0,.5);
+    height: 55px;
+}
+.block10 { 
+    float: right;
+    padding: 5px 5px 5px 5px;
+    border: solid 2px  #FF6347;
+}
+.block11 { 
+    background: #FFA500;
+    margin: 5px 5px 5px 5px;
+    padding: 5px 5px 5px 5px;
+    border: solid 2px  #FF4500;
+}
+
+   </style>
+
+</head>
+<body>
+<h1><center>Блочная модель</center></h1>
+<div class="block1">R</div>
+<div class="block2">G</div>
+<div class="block3">B</div>
+<div class="block4">C</div>
+<div class="block5">M</div>
+<div class="block6">Y</div>
+<div class="block7">K</div> </br>
+
+
+<p class="block8"> <span class="block11">С помощью RGB. Можно определить цвет,</span> используя значения красной, зеленой и синей составляющей в десятичном исчислении. Каждая из трех компонент цвета принимает значение от 0 до 255. 
+    Также допустимо задавать цвет в процентном отношении, при этом 100% будет соответствовать числу 255. Вначале указывается ключевое слово rgb, а затем в скобках, через запятую указываются компоненты цвета, например rgb(255, 128, 128) или rgb(100%, 50%, 50%).</p>
+<p class="block9"><span class="block11">RGBA. RGBA добавлен в CSS3, поэтому валидацию CSS-кода надо проводить именно по этой версии. </span> Следует отметить, что стандарт CSS3 еще находится в разработке и некоторые возможности в нем могут поменяться. К примеру, цвет в формате RGB добавленный к свойству background-color проходит валидацию, а добавленный к свойству background уже нет. 
+    При этом браузеры вполне корректно понимают цвет для того и другого свойства.</p>
+<p class="block10"><span class="block11"> HSL. Название формата HSL образовано от сочетания первых букв Hue (оттенок), Saturate (насыщенность) и Lightness (светлота). </span> Оттенок это значение цвета на цветовом круге (рис. 1) и задаётся в градусах. 0° соответствует красному цвету, 120° — зелёному, а 240° — синему. Значение оттенка может изменяться от 0 до 359.
+    Насыщенностью называется интенсивность цвета, измеряется в процентах от 0% до 100%. Значение 0% обозначает отсутствие цвета и оттенок серого, 100% максимальное значение насыщенности.
+    Светлота задает, насколько цвет яркий и указывается в процентах от 0% до 100%. Малые значения делают цвет темнее, а высокие светлее, крайние значения 0% и 100% соответствуют чёрному и белому цвету.</p> 
+
+
+</body>
+</html>

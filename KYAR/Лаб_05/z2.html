@@ -1,0 +1,66 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Таблица</title>
+   <style>
+table {
+    border: 0px solid grey;
+    color: black;
+    border-spacing: 0px;
+	border-collapse: separate;
+}
+td { 
+    border: 2px solid grey; 
+    empty-cells: hide;
+   }
+caption {
+    vertical-align: middle;
+    font-size: 1.2em;
+}
+th {
+    border: 2px solid grey; 
+    background-color: darkblue;
+    color: white;
+}
+.bb1{
+    background-color: #00bff0;
+    color: white;
+}
+.bb2{
+    background-color: purple;
+    color: white;
+}
+.bb3{
+    background-color: green;
+    color: white;
+}
+   </style>
+
+
+</head>
+<body>
+<table>
+    <caption>Топ производители смартфонов 1 кв. 2021 года</caption>
+    <thead>
+        <tr><td></td><th>Производитель</th><th>Доля, проценты</th><th>Годовой прирост</th></tr>
+    </thead>
+    <tbody>
+        <tr><td>#1 ⇑</td><td class="bb1">Xiaomi</td><td class="bb2">32%</td><td class="bb3">+125%</td></tr>
+        <tr><td>#2 ⇑</td><td class="bb1">Samsung</td><td class="bb2">27%</td><td class="bb3">+41%</td></tr>
+        <tr><td>#3 ⇑</td><td class="bb1">Honor</td><td class="bb2">10%</td><td class="bb3">0%</td></tr>
+        <tr><td>#4 ⇔</td><td class="bb1">Apple</td><td class="bb2">9%</td><td class="bb3">+24%</td></tr>
+        <tr><td>#5 ⇔</td><td class="bb1">Realme</td><td class="bb2">9%</td><td class="bb3">+682%</td></tr>
+    </tbody>
+   <tfoot>
+        <tr><td></td><td class="bb1">Итого</td><td class="bb2">82%</td><td class="bb3">682%</td></tr>
+   </tfoot>
+
+
+
+
+</table>
+</body>
+</html>

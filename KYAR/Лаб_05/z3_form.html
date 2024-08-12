@@ -1,0 +1,151 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Форма заполнения</title>
+<style>
+   * {
+    box-sizing: border-box;
+}
+form {
+   background-color: indigo;
+   color: white;
+   width: 50%;
+   font-size: 1.2em;
+}
+.black-input:focus {
+  color: black;
+  background-color: white;
+}
+
+input[type=text], textarea {
+   background-color: rgba(255,255,255,.5);
+    width: 250px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+   color: rgba(255,255,255,1);
+   box-shadow: inset 0 0 10px rgba(255, 255, 255, .75)
+}
+
+label {
+    padding: 8px 12px 8px 5px;
+    display: inline-block;
+}
+input[type=submit] {
+    background-color: navy;
+    color: white;
+    padding: 12px 20px;
+    border: 2px white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px white;
+    
+}
+
+input[type=submit]:hover {
+    background-color: navy;
+}
+input[type=reset] {
+    background-color: navy;
+    color: white;
+    padding: 12px 20px;
+    border: 2px white;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 0 4px white;
+   
+}
+input[type=reset]:hover {
+    background-color: navy;
+}
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 8px;
+    color: white;
+}
+
+.col-75 {
+    float: left;
+    width: 65%;
+    margin-top: 15px;
+    color: white;
+}
+.col-85{
+   float: left;
+   width: 65%;
+   margin-top: 10px;
+}
+.col-95{
+   float: left;
+   width: 120px;
+   margin-top: 10px;
+   margin-right: 5px;
+}
+.celector{
+   float: left;
+   width: 65%;
+   margin-bottom: 15px;
+   margin-top: 10px;
+   background-color: white;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    margin-bottom: 10px;
+   margin-top: 10px;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+    }
+</style>
+
+</head>
+<body>
+   <form>
+   <h1>Регистрация постоянного клиента</h1>
+   <div class="row"><div class="col-25"><label for="fname">Фамилия:</label></div>
+   <div class="col-75"><input class="black-input" id="fname" name="fname" type="text"></div></div>
+   <div class="row"><div class="col-25"><label for="name">Имя:</label></div>
+   <div class="col-75"><input class="black-input" id="name" name="name" type="text"></div></div>
+   <div class="row"><div class="col-25"><label>Отчество:</label></div>
+   <div class="col-75"><input class="black-input" type="text"></div></div>
+   <div class="row"><div class="col-25"><label>Ваш возраст:</label></div>
+   <div class="col-75"><input class="black-input" type="text"></div></div>
+   <div class="row"><div class="col-25"><label for="male">Пол:</label></div>
+   <div class="col-75"><input type="checkbox" name="male" value="male" > Мужской
+      <input type="checkbox" name="male" value="female"> Женский
+   </div></div>
+   <div class="row"><div class="col-25"><label>Email:</label></div>
+   <div class="col-75"><input type="text"></div></div>
+   <div class="row"><div class="col-25"><label>Страна проживания:</label></div>
+   <div class="col-75"><input class="black-input" type="text"></div></div>
+   <div class="row"><div class="col-25"><label for="network">Откуда вы узнали о нас?</label></div>
+   <div class="col-75">
+      <select  size="1" id="network" name="network">
+         <option selected>Выберите вариант</option>
+         <option>VK</option>
+         <option>Instagram</option>
+      </select>
+    </div></div>
+    <div class="row"><div class="col-25"><label>Дата заполнения</label></div>
+    <div class="col-85"><input type="date" value="дд" min="мм" max="гггг" /></div>
+
+    <div class="row">
+      <label></label>
+      <p><input  class="col-95" type="submit" value="Регистрация">
+      <input  class="col-95" type="reset" value="Отмена"></p></div>
+
+   </form>
+</body>
+</html>
