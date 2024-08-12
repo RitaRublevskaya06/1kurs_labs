@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фотогалерея</title>
+    <link href="z1.css" rel="stylesheet">
+</head>
+<body>
+    <div class="gallery">
+        <div class="photo-container" onmouseover="showDescription(1)" onmouseout="hideDescription(1)">
+            <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб15\задание1\десерт1.jpg" alt="Photo 1" class="photo" id="photo1">
+            <div class="description" id="desc1">
+                Легкий и вкусный тортик по мотивам известного итальянского десерта. Этот вариант - отличная ему замена. А готовится он очень легко, здорово выручает, когда надо быстро соорудить вкусный десерт.
+            </div>
+        </div>
+        <div class="photo-container" onclick="showBorder(2)">
+            <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб15\задание1\десерт2.jpg" alt="Photo 2" class="photo" id="photo2">
+
+        </div>
+        <div class="photo-container">
+            <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб15\задание1\десерт3.jpg" alt="Photo 3" class="photo" id="photo3">
+
+        </div>
+        <div class="photo-container" onmouseover="showDescription(4)" onmouseout="hideDescription(4)"
+            onclick="toggleImage()">
+            <img src="D:\Учёба\Универ\Компьтерные языки разметки Барковский\Лаб15\задание1\десерт4.jpg"  class="hover-image" id="image4">
+    
+        </div>
+    </div>
+
+    <script>
+        function showDescription(photoNumber) {
+            const description = document.getElementById(`desc${photoNumber}`);
+            description.style.opacity = 1;
+        }
+
+        function hideDescription(photoNumber) {
+            const description = document.getElementById(`desc${photoNumber}`);
+            description.style.opacity = 0;
+        }
+
+        function showBorder(photoNumber) {
+            // Убираем границу у всех фото
+            for (let i = 1; i <= 3; i++) {
+                const photo = document.getElementById(`photo${i}`);
+                photo.classList.remove("photo-border");
+            }
+
+            // Добавляем границу к выбранному фото
+            const selectedPhoto = document.getElementById(`photo${photoNumber}`);
+            selectedPhoto.classList.add("photo-border");
+        }
+        document.addEventListener("DOMContentLoaded", function () {
+            var lastImage = document.getElementById("image4");
+
+            lastImage.addEventListener("mouseenter", function () {
+                lastImage.src = "D:/Учёба/Универ/Компьтерные языки разметки Барковский/Лаб15/задание1/десерт5.jpg"; 
+            });
+
+            lastImage.addEventListener("mouseleave", function () {
+                lastImage.src = "D:/Учёба/Универ/Компьтерные языки разметки Барковский/Лаб15/задание1/десерт4.jpg";
+            });
+        });
+    </script>
+</body>
+</html>

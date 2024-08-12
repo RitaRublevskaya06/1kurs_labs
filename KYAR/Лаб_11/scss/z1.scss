@@ -1,0 +1,142 @@
+@import '_value1.scss';
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: $bg-color-body;
+}
+@mixin flex {
+    display: flex;
+    justify-content: space-between;
+}
+@function size(){
+    @return 1.15em;
+}
+
+header {
+    @include flex;
+    align-items: $center;
+    background-color:$bg-color-head-foot;
+    padding: $padding;
+}
+
+nav {
+    li {display: $nav_display;}
+    a {
+        display: $nav_display;
+        width: 7em;
+        padding: $padding;
+        margin: 10px 30px;
+        background-color: rgb(246, 246, 239);
+        border: $border2;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        text-align: $center;}
+}
+img {
+    width: $img_logo_width;
+    height: $img_logo_height;
+    margin-left: 50px;
+}
+
+@mixin h2-color ($height, $width)
+{
+    @if (($height < $width))
+    {color: rgb(96, 39, 39);}
+    @else {color: red;}
+}
+h2 {@include h2-color(10px, 30px )}
+
+$header-size: 16px;
+$ratio: 1.5;
+
+h2 {
+  font-size: $header-size* $ratio;
+}
+
+p {
+    font-size: $header-size;
+}
+
+aside {
+    h2{
+        text-align: $center;
+    }
+    background-color: $bg-color-aside;
+    height: 800px;
+    width: 450px;
+    float: right;
+    img {
+        width: $img_size_2;
+        height: $img_size_2;
+        float: $float_left;
+        margin: $margin;
+    }
+    div {
+        display: $div_display;
+        margin: $margin;
+        width: 420px;
+        height: 120px;
+        border: $border1;
+        float: right;
+    }
+}
+
+$form-width: 40px;
+$gutter-width: 10px;
+
+@function form-width($n) {
+  @return $n * $form-width + $n * $gutter-width;
+}
+
+form {
+    width:  form-width(9);
+    height: 250px;
+    background-color: $bg-color-form;
+    border: $border2;
+    padding: $padding;
+    margin-bottom: $margin;
+}
+
+%input_margin{
+    margin-bottom: 1px;
+}
+%input_padding{
+    padding: 5px;
+}
+input{
+    @extend %input_padding;
+    @extend %input_margin;
+}
+
+section{
+    h2{
+        text-align: $center;
+    }
+    div{
+        display: $div_display;
+        border: $border1;
+        width: $div_width;
+        height: $div_height;
+        margin: 20px;
+        text-align: justify;
+        float: $float_left;
+    }
+    img {
+        float: $float_left;
+        width: $img_size_1;
+        height: $img_size_1;
+        margin: 25px;
+    }
+}
+footer {
+
+    width: 100%;
+    height: 115px;
+    background-color: $bg-color-head-foot;
+    border: $border1;
+    padding-left: $padding-left;
+    float: $float_left;
+}
+

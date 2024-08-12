@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="styleXML2.xsl"?>
+<main>
+	<rw>
+		<user>Андреев Р. А.</user>
+		<point>4</point>
+	</rw>
+	<rw>
+		<user>Бавыкин М. Д.</user>
+		<point>9</point>
+	</rw>
+	<rw>
+		<user>Вонсик С. И.</user>
+		<point>8</point>
+	</rw>
+	<rw>
+		<user>Жилко А. С.</user>
+		<point>7</point>
+	</rw>
+	<rw>
+		<user>Касперович М. И.</user>
+		<point>3</point>
+	</rw>
+	<rw>
+		<user>Кирпиченко В. А.</user>
+		<point>6</point>
+	</rw>
+	<rw>
+		<user>Мамонько Д. А.</user>
+		<point>9</point>
+	</rw>
+	<rw>
+		<user>Михалкова В. А.</user>
+		<point>4</point>
+	</rw>
+	<rw>
+		<user>Нагорный М. С.</user>
+		<point>9</point>
+	</rw>
+	<rw>
+		<user>Пархутик Е. Л.</user>
+		<point>4</point>
+	</rw>
+    <rw>
+		<user>Пронович М. С.</user>
+		<point>4</point>
+	</rw>
+    <rw>
+		<user>Редько П. В.</user>
+		<point>3</point>
+	</rw>
+    <rw>
+		<user>Рублевская М. В.</user>
+		<point>6</point>
+	</rw>
+    <rw>
+		<user>Сегренев К. С.</user>
+		<point>9</point>
+	</rw>
+    <rw>
+		<user>Шевчик А. В.</user>
+		<point>4</point>
+	</rw>
+
+</main>

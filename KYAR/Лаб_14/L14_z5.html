@@ -1,0 +1,41 @@
+<!DOSTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>МАСШАТАБИРУЕМАЯ ВЕКТОРНАЯ ГРАФИКА</title>
+   <style>
+    polygon:hover {
+        stroke: darkred;
+    }
+</style>
+</head>
+<body>
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1940 1080" id="svg1" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <circle id="cir" cx="200" cy="100" r="100" fill="blue"></circle>
+        <rect x="350" height="200px" width="200px" fill="red" stroke="white" stroke-width="2"/>
+        <rect x="350" height="200px" width="200px"  fill="none" stroke-dashoffset="800" stroke-dasharray="800" stroke="black" stroke-width="7" >
+        <animate attributeName="stroke-dashoffset" dur="5s" begin="svg1.click" values="-750;0" />
+        </rect>
+        <ellipse  id="ell" cx="750" cy="100" rx="150" ry="80" fill="green"></ellipse>
+        <animate xlink:href="#ell" attributeName="fill" from="green" to="aquamarine" dur="3s" begin="click" fill="freeze" />
+        <defs> 
+            <linearGradient id="gradient1" > 
+                <stop offset="0" stop-color="yellow"> 
+                    <animate attributeName="stop-color" values="yellow;green;" 
+                        dur="3s"  fill="freeze"/> 
+                </stop> 
+                <stop offset="10" stop-color="yellow"> 
+                    <animate attributeName="stop-color" values="yellow;orange;" 
+                    dur="3s" fill="freeze"/>  
+                </stop> 
+            </linearGradient> 
+        </defs> 
+        <polygon id="perv" points="900,250 1050,0 1200,250 " stroke="purple" fill="url(#gradient1)" stroke-width="3px">
+            <animate attributeName="style" values="fill: yellow; fill: url(#grad);" dur="3s" begin="click" fill="freeze" />
+        </polygon>
+        <path d="M100,250 L650,250 M650,250 L500,350 M500,350 L1350,350 Z" stroke="indigo" stroke-width="3" fill="none"></path> 
+    </svg>
+</body>
+</html>

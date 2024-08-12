@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styleXML3.css"?>
+
+<catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema" xsi:noNamespaceSchemaLocation="L12_SCHEMA_z3.xsd">
+<head>
+    <nname>Название</nname>
+    <nbrand>Бренд</nbrand>
+    <ndescription>Описание</ndescription>
+    <nprice>Цена</nprice>
+</head>
+<product>
+    <name>Smartphone Samsung Galaxy S20</name>
+    <brand>Samsung </brand>
+    <description>Новейший смартфон от Samsung с поддержкой 5G и 6,2-дюймовым дисплеем.</description>
+    <price>1300.00 </price>
+</product>
+<product>
+    <name>Laptop Apple MacBook Pro</name>
+    <brand>Apple</brand>
+    <description>Мощный ноутбук от Apple с 13-дюймовым дисплеем Retina и сенсорной панелью.</description>
+    <price>7699.00</price>
+</product>
+<product>
+    <name>Smartwatch Apple Watch Series 6</name>
+    <brand>Apple</brand>
+    <description>Новейшие умные часы от Apple с постоянно включенным дисплеем Retina и приложением для измерения ЭКГ.</description>
+    <price >1541.00</price>
+</product>
+<product>
+    <name>Wireless Headphones Bose QuietComfort 35 II</name>
+    <brand>Bose</brand>
+    <description>Наушники с шумоподавлением от Bose с голосовым управлением Alexa и временем автономной работы до 20 часов.</description>
+    <price>1299.00</price>
+</product>
+<product> 
+    <name>Smart Speaker Amazon Echo Dot</name>
+    <brand>Amazon</brand>
+    <description>Умная колонка от Amazon с голосовым управлением Alexa и компактным дизайном.</description>
+    <price>441.00</price>
+</product>
+</catalog>

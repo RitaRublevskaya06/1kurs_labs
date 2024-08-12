@@ -1,0 +1,46 @@
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.photo-container {
+    position: relative;
+    cursor: pointer;
+    max-width: 300px;
+    height: 300px;
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+    border: 0;
+    transition: transform 0.2s;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.photo-border {
+    border: 10px solid red;
+}
+
+#imageContainer {
+    display: flex;
+}
+
+.hover-image {
+    width: 300px;
+    height: 300px;
+    margin: 5px;
+    transition: transform 0.3s ease-in-out;
+}

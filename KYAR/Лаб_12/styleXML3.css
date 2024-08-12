@@ -1,0 +1,25 @@
+catalog{
+    display: table;
+    border-collapse: collapse;
+    margin: 10px;
+}
+  
+head, product{
+    display: table-row;
+}
+  
+nname, nbrand, ndescription, nprice{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    background-color: rgb(208, 166, 240);
+}
+  
+name, brand, description, price{
+    display: table-cell;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    background-color: rgb(241, 221, 255);
+}

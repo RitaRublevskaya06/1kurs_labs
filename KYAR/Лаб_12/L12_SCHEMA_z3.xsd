@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="styleXML3.css"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Определение типа для элемента <catalog> -->
+  <xs:element name="catalog">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Определение типа для элемента <head> -->
+        <xs:element name="head" type="head"/>
+        <!-- Определение типа для элемента <product> с возможностью повторения -->
+        <xs:element name="product" type="product" minOccurs="0" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Определение типа для элемента <head> -->
+  <xs:complexType name="head">
+    <xs:sequence>
+      <!-- Определение типов для подэлементов <nname>, <nbrand>, <ndescription>, <nprice>  -->
+      <xs:element name="nname" type="xs:string"/>
+      <xs:element name="nbrand" type="xs:string"/>
+      <xs:element name="ndescription" type="xs:string"/>
+      <xs:element name="nprice" type="xs:string"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <!-- Определение типа для элемента <product> -->
+  <xs:complexType name="product">
+    <xs:sequence>
+      <!-- Определение типов для подэлементов <name>, <brand>, <price>, <availability> -->
+      <xs:element name="name" type="xs:string"/>
+      <xs:element name="brand" type="xs:string"/>
+      <xs:element name="description" type="xs:string"/>
+      <xs:element name="price" type="xs:decimal"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>

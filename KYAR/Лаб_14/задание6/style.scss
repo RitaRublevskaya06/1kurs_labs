@@ -1,0 +1,36 @@
+h3, h1, h4, h2 {
+    color: #FF00FF;
+    font-family:  'Monotype Corsiva';
+    font-size: 22pt;
+}
+.special1 { color: #FF0000; 
+    font-family: 'Times New Roman';
+    font-size: 18pt;
+}
+.special2 { color: yellow; 
+    font-family:  'Times New Roman';
+    font-size: 20pt;
+}
+.special3 { color: green; 
+    font-family:  'Times New Roman';
+    font-size: 20pt;
+}
+body {
+    background-color: white;
+   
+h1, h2 {
+    text-align: center;
+   }
+h4 {
+    font-family: 'Arial';
+    color: #1831FF;
+    font-size: 16pt; }
+}
+table, tr, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.intro table {color: rgb(25, 142, 95);}
+text{
+      font-size: 18px;
+    }
