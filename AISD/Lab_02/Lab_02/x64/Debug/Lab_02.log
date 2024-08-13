@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Univer\1 kurs\AISD\Lab_02\Lab_02\main.cpp(5,20): warning C4244: return: преобразование "double" в "int", возможна потеря данных
+  Lab_02.vcxproj -> D:\Univer\1 kurs\AISD\Lab_02\x64\Debug\Lab_02.exe
