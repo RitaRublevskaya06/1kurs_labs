@@ -1,0 +1,93 @@
+#include "Hash.h"
+#include <iostream>
+int HashFunction(int key)    //Хеш-функция (мультипликативня) m(key * A * mod1)
+{
+	return  256 * ((key * 0.618) - int(key * 0.618)); //m = 256, A = 0.618
+}
+//Хеш-функция по методу двойного хеширования
+int Next_hash(int hash, int size, int p)
+{
+	return (hash + 5 * p + 3 * p * p) % size;
+}
+//Создание объекта типа Object
+Object create(int size, int(*getkey)(void*))
+{
+	return *(new Object(size, getkey));
+}
+//Инициализация объекта типа Object
+Object::Object(int size, int(*getkey)(void*))
+{
+	N = 0;
+	this->size = size;
+	this->getKey = getkey;
+	this->data = new void* [size];
+	for (int i = 0; i < size; ++i)
+		data[i] = NULL;
+}
+//Вставка элемента в хеш-таблицу
+bool Object::insert(void* d)
+{
+	bool b = false;
+	if (N != size)
+		for (int i = 0, t = getKey(d), j = HashFunction(t);
+			i != size && !b;  j = Next_hash(j, size, ++i))
+			if (data[j] == NULL || data[j] == DEL)
+			{
+				data[j] = d;
+				N++;
+				b = true;
+			}
+	return b;
+}
+//Поиск элемента в хеш-таблице по его ключу
+int Object::searchInd(int key)
+{
+	int t = -1;
+	bool b = false;
+	if (N != 0)
+		for (int i = 0, j = HashFunction(key); data[j] != NULL && i != size && !b; j = HashFunction(key))
+			if (data[j] != DEL)
+				if (getKey(data[j]) == key)
+				{
+					t = j; b = true;
+				}
+	return t;
+}
+//Получение указателя на элемент в хеш-таблице по его ключу
+void* Object::search(int key)
+{
+	int t = searchInd(key);
+	return(t >= 0) ? (data[t]) : (NULL);
+}
+//Удаление элемента из хеш-таблицы по его ключу
+void* Object::deleteByKey(int key)
+{
+	int i = searchInd(key);
+	void* t = data[i];
+	if (t != NULL)
+	{
+		data[i] = DEL;
+		N--;
+	}
+	return t;
+}
+//Удаление элемента из хеш-таблицы по его значению
+bool Object::deleteByValue(void* d)
+{
+	return(deleteByKey(getKey(d)) != NULL);
+}
+//Обход хеш-таблицы и выполнение указанной функции для каждого элемента
+void Object::scan(void(*f)(void*))
+{
+	for (int i = 0; i < this->size; i++)
+	{
+		std::cout << " Элемент" << i;
+		if ((this->data)[i] == NULL)
+			std::cout << "  пусто" << std::endl;
+		else
+			if ((this->data)[i] == DEL)
+				std::cout << "  удален" << std::endl;
+			else
+				f((this->data)[i]);
+	}
+}
