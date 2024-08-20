@@ -1,0 +1,5 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppCommon.targets(1134,5): error MSB6006: "link.exe" завершилась с кодом 1120.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void * __cdecl Object::search(int)" (?search@Object@@QEAAPEAXH@Z) в функции main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void * __cdecl Object::deleteByKey(int)" (?deleteByKey@Object@@QEAAPEAXH@Z) в функции main.
+main.obj : error LNK2019: ссылка на неразрешенный внешний символ "public: void __cdecl Object::scan(void (__cdecl*)(void *))" (?scan@Object@@QEAAXP6AXPEAX@Z@Z) в функции main.
+D:\Учёба\Универ\Основы алгоритмизации и программирования Белодед\Лабы 2 семестр\OAuP_Lab_13\x64\Debug\DOP2.exe : fatal error LNK1120: неразрешенных внешних элементов: 3
