@@ -1,7 +1,0 @@
-sofa
-storm
-zinc
-vanilla
-schema
-central
-
