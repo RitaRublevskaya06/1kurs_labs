@@ -1,0 +1,4 @@
+﻿  v11_z2.cpp
+D:\Univer\1 kurs\OAIP\2sem\OAIP_Lab_03\v11_z2\v11_z2.cpp(39,45): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Univer\1 kurs\OAIP\2sem\OAIP_Lab_03\v11_z2\v11_z2.cpp(46,44): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+  v11_z2.vcxproj -> D:\Univer\1 kurs\OAIP\2sem\OAIP_Lab_03\x64\Debug\v11_z2.exe
