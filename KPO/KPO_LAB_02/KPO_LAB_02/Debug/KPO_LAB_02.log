@@ -1,0 +1,4 @@
+﻿  main.cpp
+D:\Univer\1 kurs\KPO\KPO_LAB_02\KPO_LAB_02\main.cpp(77,11): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+D:\Univer\1 kurs\KPO\KPO_LAB_02\KPO_LAB_02\main.cpp(77,20): warning C4244: инициализация: преобразование "double" в "float", возможна потеря данных
+  KPO_LAB_02.vcxproj -> D:\Univer\1 kurs\KPO\KPO_LAB_02\Debug\KPO_LAB_02.exe
