@@ -1,0 +1,3 @@
+﻿cl : командная строка  warning D9025: переопределение "/FAcs" на "/FAu"
+  main.cpp
+  KPO_LAB_01.vcxproj -> D:\Univer\1 kurs\KPO\KPO_LAB_01\Debug\KPO_LAB_01.exe
