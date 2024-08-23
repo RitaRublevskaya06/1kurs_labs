@@ -1,0 +1,6 @@
+﻿  main.cpp
+D:\Univer\1 kurs\KPO\KPO_LAB_09\KPO_LAB_09\main.cpp(25,47): warning C4305: аргумент: усечение из "double" в "float"
+D:\Univer\1 kurs\KPO\KPO_LAB_09\KPO_LAB_09\main.cpp(26,47): warning C4305: аргумент: усечение из "double" в "float"
+  Varparm.cpp
+  Создание кода...
+  KPO_LAB_09.vcxproj -> D:\Univer\1 kurs\KPO\KPO_LAB_09\Debug\KPO_LAB_09.exe
