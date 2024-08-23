@@ -1,0 +1,5 @@
+﻿  Dictionary.cpp
+  Dictionary.h
+  Создание кода...
+x64\Debug\Dictionary.obj : warning LNK4042: объект указан более одного раза; лишние не учитываются
+  KPO_Lab_06L.vcxproj -> C:\KPO\KPO_lab_06S\x64\Debug\KPO_Lab_06L.lib
